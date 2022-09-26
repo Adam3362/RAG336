@@ -1,0 +1,30 @@
+body {
+
+    height: 35px;
+    background-color: white;
+    margin: 0;
+padding: 0;
+
+}
+
+header {
+height: 50px;
+background-color: black;
+padding: 10px;
+color:white;
+
+}
+
+header li {
+
+    margin: 20px;;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    float: left;
+    display: flex;
+}
+
+a {
+    text-decoration: none; 
+    color: white;
+}
