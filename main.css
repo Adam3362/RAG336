@@ -49,3 +49,37 @@ nav {
     padding: 40px;
 
 }
+
+
+
+
+.div1 {
+
+float: right;
+border: 3px solid green;
+width: 150px;
+margin: auto;
+
+}
+
+ .div2 {
+
+display: block;
+float: left;
+border: 3px solid green;
+width: 150px;
+margin: auto;
+}
+.div3 {
+   
+    border: 3px solid green;
+    width: 150px;
+    margin: auto;
+     
+
+    
+
+}
+.container {
+padding: 150px;
+}
