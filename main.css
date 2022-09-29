@@ -83,3 +83,12 @@ margin: auto;
 .container {
 padding: 150px;
 }
+
+section {
+ 
+    height: 75px   ;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
