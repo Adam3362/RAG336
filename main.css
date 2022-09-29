@@ -55,8 +55,8 @@ nav {
 
 .div1 {
 
-float: right;
-border: 3px solid green;
+    float: right;
+border: 3px solid blue;
 width: 150px;
 margin: auto;
 
@@ -66,13 +66,13 @@ margin: auto;
 
 display: block;
 float: left;
-border: 3px solid green;
+border: 3px solid blue;
 width: 150px;
 margin: auto;
 }
 .div3 {
    
-    border: 3px solid green;
+    border: 3px solid blue;
     width: 150px;
     margin: auto;
      
