@@ -55,31 +55,45 @@ nav {
 
 .div1 {
 
-    float: right;
-border: 3px solid blue;
+
+border: 5px solid black;
 width: 150px;
 margin: auto;
+text-align: center;
+height: 50px;
+vertical-align: text-top;
+display: table-cell;
+vertical-align: middle;
+
+
+
 
 }
 
  .div2 {
 
-display: block;
-float: left;
-border: 3px solid blue;
+border: 5px solid black;
 width: 150px;
+height: 50px;
 margin: auto;
+text-align: center;
+display: table-cell;
+vertical-align: middle;
+
 }
 .div3 {
    
-    border: 3px solid blue;
+    border: 5px solid black;
     width: 150px;
     margin: auto;
+    text-align: center;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+ 
+  }
      
 
-    
-
-}
 .container {
 padding: 150px;
 }
