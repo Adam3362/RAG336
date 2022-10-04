@@ -99,3 +99,39 @@ footer {
     color: white;
     text-align: center;
 }
+
+.container1 {
+
+    height:100vh;
+    width: 100%;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+
+}
+.swiper{
+
+width: 80%;
+height: fit-content;
+
+
+
+}
+
+.swiper-slide img{
+
+    width: 100%;
+    
+
+
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+
+color: white;
+
+}

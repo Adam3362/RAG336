@@ -8,6 +8,10 @@
     <title>RAG332</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="script.js">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 
 
@@ -27,9 +31,28 @@
 </header>   
 <body>  
     
-    <ul>
+    
+    <div class="container1">
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/ps5-product-thumbnail-01-en-14sep21.webp" ></div>
+              <div class="swiper-slide"><img src="images/cKMZShXuepVCX35j5ihkh3.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+
+    </div>
         
-    </ul>
+    
     <nav>
         <h3>adom jobba vi har plasysation tikll slsut köp n vid eleoegetane och emdia amkrte vi erbjuder även if a annars ska vi knulla era morsor o  ni inte köper nikemdemo felo feloooo
         </h3>     
@@ -60,4 +83,29 @@
 
 </footer>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+
+            delay:2000,
+            disableOnInteraction: false,
+        },
+  loop: true,
+
+ 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+</script>
 </body>
