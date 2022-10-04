@@ -87,4 +87,15 @@ text-align: center;
 
 .container {
 padding: 150px;
-} 
+display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+footer {
+ 
+    height: 75px   ;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
