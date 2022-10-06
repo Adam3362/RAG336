@@ -16,14 +16,22 @@
 
 
 <header>
-
+    <li><a href="index.html"><img src="images/The-Rag-logo_chosen_WHITE.png" width="40px" alt=""></a></li>
     <li>|</li>
     <li><a href="index.html">Home</a></li>
     <li><a href="index.html">Console</a></li>
     <li><a href="index.html">Games</a></li>
     <li><a href="index.html">Contact Us</a></li>
 
+<div class="search bar">
 
+    <div class="topnav">
+
+        <input type="text" placeholder="Search..">
+      </div>
+
+
+</div>
 
  
 </div>
@@ -38,7 +46,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"><img src="images/ps5-product-thumbnail-01-en-14sep21.webp" ></div>
+              <div class="swiper-slide"><img src="images/wp7841598.webp" ></div>
               <div class="swiper-slide"><img src="images/cKMZShXuepVCX35j5ihkh3.jpg" alt=""></div>
             </div>
             <!-- If we need pagination -->
@@ -59,13 +67,31 @@
     </nav>
     <div class="container">
         <div class="divpascal div1">
-            Consoles
+            <li><a href="index.html">Console</a></li>
+            <button type="button"
+            onclick="document.getElementById('demo').innerHTML = Date()">
+            Console</button>
+            
+            <p id="demo"></p>
+            
         </div>
         <div class="divpascal div2">
-            Games
+            <li><a href="index.html">Games</a></li>
+            <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Games</button>
+
+<p id="demo"></p>
+
+
         </div>    
-        <div class="divpascal div3">       
-            Contact us
+          
+            <button class="pascal" type="button"
+onclick="document.getElementById('demo').innerHTML = Date()" width="height">
+Contact Us</button>
+
+<p id="demo"></p>
+
         </div> 
     </div>
 
