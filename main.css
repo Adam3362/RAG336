@@ -89,27 +89,33 @@ nav {
     
 height: 50px;
 width: 120px;
-
+background-color: white;
+font-size: medium;
   }
 
   .pascal1 {
     
     height: 50px;
     width: 120px;
-    
+    background-color: white;
+    font-size: medium;
       }
      
       .pascal2 {
     
         height: 50px;
         width: 120px;
+        background-color: white;
+        font-size: medium;
+        font
+
         
           }
 
           .container {
             padding: 150px;
             display: flex;
-                column-gap: 30px;
+                column-gap: 60px;
                 justify-content: center;
                 background-color: black;
                 
