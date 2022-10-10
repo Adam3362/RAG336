@@ -7,7 +7,69 @@
     <title>Document</title>
     <link rel="stylesheet" href="games.css">
 </head>
+
+<header>
+    <li><a href="index.html"><img src="images/The-Rag-logo_chosen_WHITE.png" width="40px" alt=""></a></li>
+    <li>|</li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Console</a></li>
+    <li><a href="index.html">Games</a></li>
+    <li><a href="index.html">Contact Us</a></li>
+
+<div class="search bar">
+
+    <div class="topnav">
+
+        <input type="text" placeholder="Search..">
+      </div>
+</div>
+</div>
+
 <body>
-    
+<div class="container1">
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/wp7841598.webp" ></div>
+          <div class="swiper-slide"><img src="images/cKMZShXuepVCX35j5ihkh3.jpg" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+
+</div>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+    autoplay:{
+
+        delay:2000,
+        disableOnInteraction: false,
+    },
+loop: true,
+
+
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+
+});
+</script>
 </body>
 </html>
