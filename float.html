@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sida2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+/* ------- visa dina element ----------- */
+.showbox{
+  background-color: pink;
+  border: 2px solid red;
+}
+
+.showboxparent{
+  background-color: rgb(194, 233, 240);
+  border: 2px solid rgb(35, 24, 116);
+}
+
+/* ------- Flexbox ----------*/
+.container{
+  display:flex;
+  column-gap: 20px;
+  justify-content: center;
+}
+.flexbox1 {   width:20%;}
+/*---------- float ----------*/
+.float2{
+  display: inline-block;
+  width:20%;
+}
+.box5{  float:left; margin:0 1em;}
+.box6{  float:right; margin:0 1em;}
+/* ------ Position relative absolute-------- */
+.container3{  position: relative;}
+.box7{
+  display: inline-block;
+  width:20%;
+}
+.box8{
+position: absolute;
+left:30px;
+bottom:10px;
+width:20%;
+}
+.box9{
+position: absolute;
+right:150px;
+top:-50px;
+width:20%;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Boxplacering</h1>
+    <h2>Flexbox</h2>
+    <div class="container showboxparent">
+      <div class="flexbox1 showbox"><p>div1</p></div>
+      <div class="flexbox1 showbox"><p>div2</p></div>
+      <div class="flexbox1 showbox" ><p>div3</p></div>
+      <a class="flexbox1 showbox" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> https://css-tricks.com/snippets/css/a-guide-to-flexbox/ </a>
+    </div>
+
+    <h2>Float</h2>
+<div class="container2 showboxparent">
+  <div class="float2 showbox"><p>div4</p></div>
+  <div class="float2 box5 showbox"><p>div5</p></div>
+  <div class="float2 box6 showbox"><p>div6</p></div>
+  <a class="float2 showbox"href="https://www.w3schools.com/Css/css_float.asp">https://www.w3schools.com / Css / css_float.asp</a>
+</div>
+    
+<h2>Position Relative</h2>
+<div class="container3 showboxparent">
+  <div class="box7 showbox"><p>div7</p></div>
+  <div class="box8 showbox"><p>div8</p></div>
+  <div class="box9 showbox"><p>div9</p></div>
+  <a class="box7 showbox"href="https://www.w3schools.com/Css/css_positioning.asp">https://www.w3schools.com / Css / css_positioning.asp</a>
+</div>
+
+  </body>
+</html>
+
