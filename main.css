@@ -16,6 +16,20 @@ padding: 0px;¨
 
 }
 
+header li {
+
+  margin: 20px;;
+  color:rgb(0,0,0);
+  font-size: 20px;
+  float: left;
+  display: flex;
+}
+
+a {
+  text-decoration: none; 
+  color: black;
+}
+
 /
   .topnav a.active {
     background-color: black;
@@ -47,19 +61,6 @@ padding: 0px;¨
     }
   }
 
-header li {
-
-    margin: 20px;;
-    color:rgb(0,0,0);
-    font-size: 20px;
-    float: left;
-    display: flex;
-}
-
-a {
-    text-decoration: none; 
-    color: black;
-}
 
 ul {
     background-color:white;
@@ -107,7 +108,6 @@ font-size: medium;
         width: 120px;
         background-color: white;
         font-size: medium;
-        font
 
         
           }

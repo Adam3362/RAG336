@@ -6,8 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="script.js">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
+
 <body>
-    
+<header>
+    <li><a href="index.html"><img src="images/The-Rag-logo_chosen_WHITE.png" width="40px" alt=""></a></li>
+    <li>|</li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Console</a></li>
+    <li><a href="index.html">Games</a></li>
+    <li><a href="index.html">Contact Us</a></li>
+
+    <div class="search bar">
+
+        <div class="topnav">
+
+            <input type="text" placeholder="Search..">
+        </div>
+    </div>
+</header>
+
+<div class="container-slideshow">
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/wp7841598.webp" ></div>
+          <div class="swiper-slide"><img src="images/https___hypebeast.com_image_2020_11_sony-playstation-5-closer-look-release-info-000.jpg" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/vrdmarzhvk441.jpg" width="50px"></div>
+          <div class="swiper-slide"><img src="images/b90ad58f-9950-44a7-87fa-1ee8f0b6a90e.jpg" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+
+        
+          
+      </div>
+      </div>
+      
+      <div class="container-information">
+        <h3>(PlayStation 5) The latest Sony PlayStation introduced in November 2020. Powered by an eight-core AMD Zen 2 CPU and custom AMD Radeon GPU, the PS5 is offered in two models: with and without a 4K Blu-ray drive. Supporting a 120Hz video refresh, the PS5 is considerably more powerful than the PS4 and PS4 Pro.</h3>
+        <h3>(PlayStation 5) The latest Sony PlayStation introduced in November 2020. Powered by an eight-core AMD Zen 2 CPU and custom AMD Radeon GPU, the PS5 is offered in two models: with and without a 4K Blu-ray drive. Supporting a 120Hz video refresh, the PS5 is considerably more powerful than the PS4 and PS4 Pro.</h3>
+      </div>
+
+      <div class="container-knappar">
+        <button class= "pascal"type="button"
+        onclick="document.getElementById('demo').innerHTML">
+        BUY NOW!!</button>
+        
+        <p id="demo"></p>
+
+            <button class= "pascal"type="button"
+            onclick="document.getElementById('demo').innerHTML">
+            BUY NOW!!</button>
+    </div>
+   
+      
+
+ 
+<footer>
+
+    <h4>© 2022 Sony Europe B.V.</h4>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" width="30 px" alt="">
+    <img src="http://re-form.se/wp-content/uploads/2020/02/new-instagram-logo-png-transparent-light.png" width="30px" alt="">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" width="30px" alt="">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" width="36px" alt="">
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    autoplay:{
+
+        delay:2000,
+        disableOnInteraction: false,
+    },
+loop: true,
+
+
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+
+});
+
+const container2= new swiper('.container2', {
+    autoplay:{
+
+        delay:2000,
+        disableOnInteraction: false,
+    },
+loop: true,
+
+
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+
+});
+
+
+
+</script>
 </body>
 </html>
