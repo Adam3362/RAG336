@@ -66,12 +66,23 @@ a {
     }
   }
 
+  a:hover{
+
+    color: black;
+    background-color:grey
+  
+  
+  
+    }
+
   .container-information{
 
     padding: 5px;
     display: flex;
         column-gap: 100px;
         justify-content: center;
+        border-style: solid;
+        border-color: black;
   }
   .container-knappar{
 
@@ -82,12 +93,13 @@ a {
         
   }
   
-  footer {
+  footer{
  
     height: 75px   ;
     background-color: white;
     color: black;
     text-align: center;
+    
 }
 
 
