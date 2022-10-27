@@ -55,8 +55,8 @@ a {
 
 .pascal {
 
-  height: 50px;
-  width: 120px;
+  height: 100px;
+  width: 200px;
   background-color: white;
   font-size: medium;
 }
@@ -67,24 +67,36 @@ a {
   width: 200px;
   background-color: white;
   font-size: medium;
+  
 }
 
 .pascal2 {
-
+  
   height: 100px;
   width: 200px;
   background-color: white;
   font-size: medium;
-  font
+
+  
 }
 
 .container {
   padding: 150px;
   display: flex;
-  column-gap: 150px;
-  justify-content: center;
+  column-gap: 500px;
+  align-items: center;
   background-color: :-moz-only-whitespace;
   
 
 
+}
+
+
+.container-knappar{
+
+      
+      display: flex;
+      column-gap: 255px;
+      justify-content: center;
+      border: 100px;
 }
