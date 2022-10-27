@@ -148,3 +148,103 @@ prevEl: '.swiper-button-prev',
 </script>
 </body>
 </html>
+
+
+
+
+<div class="container4">
+          
+          
+  <label class="switch">
+  <input type="checkbox">
+  <span class="slider">
+  <label/>
+  
+  <label class="switch">
+  <input type="checkbox"checked>
+  <span class="slider">
+  <label/>
+  
+  <label class="switch">
+  <input type="checkbox">
+  <span class="slider">
+  <label/>
+
+  <label class="switch">
+  <input type="checkbox"checked>
+  <span class="slider">
+  <label/>
+
+  
+.container4 {
+  text-align: center;
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  top:50%
+  left:50%
+  
+  
+  }
+  
+  switch{
+  
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 60px;
+    margin: 0 10px;
+  
+  
+  }
+  
+  .slider{
+  
+  
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+  
+  }
+  
+  .switch input {display: none;}
+    
+  .slider:before
+  {
+  
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 5px;
+  background-color: grey;
+  transition: 0,4s;
+  border-radius: 50px;
+  }
+  
+  input:checked + .slider
+  {
+  
+  background-color: black;
+  
+  
+  
+  }
+  
+  input:checked + .slider:before
+  {
+  
+  transform: translateX(50px);
+  
+  
+  
+  }
+  
+  
+  
