@@ -94,7 +94,7 @@ nav {
   height: 400px;
 
     text-decoration: none; 
-    color: black;
+    color: var(--black);;
 
     text-align: center;
     padding: 40px;
