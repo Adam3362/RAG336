@@ -55,10 +55,11 @@ a {
 
 .pascal {
 
-  height: 100px;
+  height: 50px;
   width: 200px;
-  background-color: white;
+  background-color: black;
   font-size: medium;
+  color: white;
 }
 
 .pascal1 {
@@ -67,17 +68,17 @@ a {
   width: 200px;
   background-color: white;
   font-size: medium;
-  
+
 }
 
 .pascal2 {
-  
+
   height: 100px;
   width: 200px;
   background-color: white;
   font-size: medium;
 
-  
+
 }
 
 .container {
@@ -86,17 +87,17 @@ a {
   column-gap: 500px;
   align-items: center;
   background-color: :-moz-only-whitespace;
-  
+
 
 
 }
 
 
-.container-knappar{
+.container-knappar {
 
-      
-      display: flex;
-      column-gap: 255px;
-      justify-content: center;
-      border: 100px;
+
+  display: flex;
+  column-gap: 255px;
+  justify-content: center;
+  border: 100px;
 }
