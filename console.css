@@ -93,11 +93,11 @@ a {
 }
 
 
-.container-knappar {
+.containerknappar{
 
-
-  display: flex;
-  column-gap: 255px;
-  justify-content: center;
-  border: 100px;
+      height: 50px;
+      display: flex;
+      column-gap: 255px;
+      justify-content: center;
+      border: 100px;
 }
