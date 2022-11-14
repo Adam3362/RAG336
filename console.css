@@ -101,3 +101,37 @@ a {
       justify-content: center;
       border: 100px;
 }
+.container1 {
+  padding: 150px;
+  display: flex;
+  column-gap: 500px;
+  align-items: center;
+  background-color: :-moz-only-whitespace;
+  
+}
+
+.pascal3 {
+  height: 100px;
+  width: 280px;
+  background-color: white;
+  font-size: medium;
+
+
+}
+
+.pascal4 {
+  height: 100px;
+  width: 280px;
+  background-color: white;
+  font-size: medium;
+
+
+
+}
+footer {
+ 
+  height: 75px   ;
+  background-color:var(--white);
+  color: var(--black);;
+  text-align: center;
+}
