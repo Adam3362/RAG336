@@ -1,7 +1,18 @@
+:root {
+  --black:#000000;
+  --white: #ffffff;
+  --grey: #808080;
+}
+
+
 header {
     height: 70px;
-    background-color: white;
-    padding: 0px;¨
+    background-color:var(--white);
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 7;
+
 
 
 
@@ -17,11 +28,11 @@ header {
 
     a {
         text-decoration: none; 
-        color: black;
+        color:var(--black);
     }
     .topnav a.active {
-        background-color: black;
-        color: white;
+        background-color:var(--black);
+        color:var(--white);
       }
 
       .topnav input[type=text] {
@@ -31,8 +42,8 @@ header {
         margin-top: 20px;
         margin-right: 20px;
         font-size: 16px;
-        background-color: grey;
-        color: white
+        background-color:var(--grey);
+        color:var(--white);
       }
 
       @media screen and (max-width: 600px) {
@@ -51,7 +62,7 @@ header {
 
       nav {
       height: 500px;
-      background-color:grey
+      background-color:var(--grey);
       
      
 
@@ -67,7 +78,7 @@ header {
     section {
 
       height: 500px;
-      background-color: grey;
+      background-color:var(--grey);
 
     }
 
@@ -84,8 +95,39 @@ header {
     }
     footer {
       height: 75px   ;
-      background-color: white;
-      color: black;
+      background-color:var(--white);
+      color:var(--black);
       text-align: center;
  
     }
+
+    nav img {
+
+   
+   margin-left: 225px;
+   position: relative;
+   padding: 30px;
+    }
+
+    nav h1 {
+      margin-left: 120px;
+      position:relative; bottom:35px;
+      font-size: 25px ;
+
+    }
+
+    nav h2 {
+      padding-left: 250px;
+      position:relative; bottom:85px;
+      font-size: 25px ;
+
+    
+    }
+    nav h3 {
+      margin-left: 1150px;
+      position:relative; bottom: 135px;
+      font-size: 25px ;
+
+    }
+
+    

@@ -2,7 +2,10 @@ header {
   height: 70px;
   background-color: white;
   padding: 0px;
-  ¨
+  position: sticky;
+  top: 0;
+  z-index: 7;
+
 }
 
 header li {
