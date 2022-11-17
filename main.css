@@ -259,39 +259,4 @@ transform: translateX(50px);
 
 }
 
-#range-slider{
-
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 10vh;
- 
-}
-.main{
- width: 170px;
- background-color:var(--black);
- border-radius: 5px;
- padding: 10px;
-}
-
-#brightness-range{
-
-width: 100%;
--webkit-appearance: none;
-background-color: #e4e4e4;
-height: 10px;
-outline: none;
-cursor: pointer;
-}
-#brightness-range::-webkit-slider-thumb {
--webkit-appearance: none;
-width: 25px;
-height: 25px;
-border-radius: 50%;
-cursor: pointer;
-background-color: #22438c;
-
-
-}
-
 

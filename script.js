@@ -1,7 +1,4 @@
-function fun(e)
+if(x=)
 
-{ 
-var container = document.getElementById('body');
-var val = e.value;
-container.setAttribute("style", "filter: brightness("+val+"%);");
+
 }
