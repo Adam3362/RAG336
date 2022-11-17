@@ -55,11 +55,10 @@ a {
 
 .pascal {
 
-  height: 50px;
+  height: 100px;
   width: 200px;
-  background-color: black;
+  background-color: white;
   font-size: medium;
-  color: white;
 }
 
 .pascal1 {
@@ -93,9 +92,9 @@ a {
 }
 
 
-.containerknappar{
+.container-knappar{
 
-      height: 50px;
+      
       display: flex;
       column-gap: 255px;
       justify-content: center;
