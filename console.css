@@ -2,10 +2,7 @@ header {
   height: 70px;
   background-color: white;
   padding: 0px;
-  position: sticky;
-  top: 0;
-  z-index: 7;
-
+  ¨
 }
 
 header li {
@@ -71,17 +68,17 @@ a {
   width: 200px;
   background-color: white;
   font-size: medium;
-  
+
 }
 
 .pascal2 {
-  
+
   height: 100px;
   width: 200px;
   background-color: white;
   font-size: medium;
 
-  
+
 }
 
 .container {
@@ -90,7 +87,7 @@ a {
   column-gap: 500px;
   align-items: center;
   background-color: :-moz-only-whitespace;
-  
+
 
 
 }
@@ -103,4 +100,38 @@ a {
       column-gap: 255px;
       justify-content: center;
       border: 100px;
+}
+.container1 {
+  padding: 150px;
+  display: flex;
+  column-gap: 500px;
+  align-items: center;
+  background-color: :-moz-only-whitespace;
+  
+}
+
+.pascal3 {
+  height: 100px;
+  width: 280px;
+  background-color: white;
+  font-size: medium;
+
+
+}
+
+.pascal4 {
+  height: 100px;
+  width: 280px;
+  background-color: white;
+  font-size: medium;
+
+
+
+}
+footer {
+ 
+  height: 75px   ;
+  background-color:var(--white);
+  color: var(--black);;
+  text-align: center;
 }
