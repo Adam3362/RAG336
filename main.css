@@ -20,7 +20,6 @@ header {
 height: 70px;
 background-color:var(--white);
 padding: 0px;
-position: sticky;
 top: 0;
 z-index: 7;
 
@@ -295,6 +294,59 @@ background-color: #22438c;
 
 }
 
+.splash{
+
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: #000000;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  padding-top: 45vh;
+
+  
+  
+  }
+  
+  
+  
+  .splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    z-index: -10;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 0,5s;
+  
+  }
+  
+  @keyframes fadeIn{
+    to{
+      opacity: 0;
+  
+  
+    }
+  
+  }
+  
+  .fade-in{
+    opacity: 1;
+    animation: forwards ease-in 1s;
+    font-family:fantasy;
+  
+  
+  
+  
+  }
 
 
 
