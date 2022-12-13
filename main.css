@@ -9,7 +9,7 @@
 
 body {
 
-  height: 1300px;
+  height: 1100wepx;
   background-color: var(--white);
   margin: 0;
   padding: 0;
@@ -98,7 +98,7 @@ ul {
 nav {
 
   background-color: var(--white);
-  height: 400px;
+  height: 180px;
 
   text-decoration: none;
   color: var(--black);
