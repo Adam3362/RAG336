@@ -8,8 +8,6 @@
 
 
 body {
-
-  height: 1100wepx;
   background-color: var(--white);
   margin: 0;
   padding: 0;
@@ -17,7 +15,7 @@ body {
 }
 
 header {
-  height: 70px;
+  height: 75px;
   background-color: var(--white);
   padding: 0px;
   top: 0;
@@ -150,7 +148,7 @@ nav {
 
 footer {
 
-  height: 75px;
+  height: 75px; 
   background-color: var(--white);
   color: var(--black);
   ;
