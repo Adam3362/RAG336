@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <script src="js\aboutus.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    
+</head>
+
+<body id="body">
+
+<!-- Header-start -->
+<header id="header">
+    <li onclick="home()"><a><img src="images/The-Rag-logo_chosen_WHITE.png" width="40px" alt=""></a></li>
+    <li class="hello">|</li>
+    <li onclick="recent()"><a class="child bounce text">Recent </a></li>
+    <li onclick="playstation()"><a class="theImage">Playstation</a></li>
+    <li onclick="xbox()"><a class="link wobble-to-top-right-on-hover">Xbox</a></li>
+</header>  
+ <!-- Header-end -->
+
+  <!-- about rag text, the pictures and information-start -->
+<div id="ever" class="ever">
+
+<div class="we">
+
+  <h1 class="what_we_do">About RAG</h1>
+  <h3 class="what_we_do">We are a developed company based in Europe, which three of our supperier students who are here to help you find the perfect console for you. We search through out the internet about the most viral products. In this site we compare the history between PlayStation and Xbox. We present information about the two most rivaly consoles. © 2022 Rag Europe B.V.</h3>
+
+</div>
+
+<h1 class="what_we_do" id="fil">Who we are</h1>
+
+<div class="play">
+    <div class="adam">
+        <img src="images/pictureFile.jpg" alt="" height="280px" width="280px">
+        <p class="hello" > Adam Chahine, the one who took care of the research behind playstation. If you have any further questions about playstation make sure to contact me by @Adam.chahine@utb.salem.se or 0737031229</p>
+    </div>
+
+  <div class="raf">
+    <img  src="images/rafelo.png" alt="" height="280px" width="280px">
+    <p class="hello">Rafel Fawwaz Sabah, the one who took care of the research behind Xbox. If you have any further questions about xbox make sure to contact me by @Rafel.fawwaz.Sabah@utb.salem.se or 0790769993</p>
+
+  </div>
+
+    <div class="gab">
+    <img  src="images/gabriel.png" alt="" height="280px" width="280px">
+    <p class="hello" >Gabriel Lebario Hanna, The one who Takes care of the website, just incase something goes wrong he takes care of it and fixes it. If you have any further questions make sure to contact me by  Gabriel.Hanna@utb.salem.se or 0709625972</p>
+
+</div>
+</div>
+<!-- about rag text, the pictures and information-end-->
+
+  <!-- footer and logos-start -->
+<h1 class="what_we_do">Follow our socials</h1>
+
+<div class="play">
+    <div class="twitt">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"alt="" height="80px" width="80px">
+    </div>
+    
+    <div class="inst">
+        <img src="http://re-form.se/wp-content/uploads/2020/02/new-instagram-logo-png-transparent-light.png" alt=""height="80px" width="80px">
+    </div>
+       
+    <div class="face">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt=""height="80px" width="80px">
+    </div>
+
+    <div class="yt">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt=""height="80px" width="80px">
+    </div>
+     
+</div>
+ <!-- footer and logos-end -->
+
+</body>
+
+<script>
+  
+  // (A) onclick för varje sida då den skickar och testar om de dark elr wwhite- start
+  function playstation () {
+     
+      var first;
+    
+      if(document.getElementById("header").style.backgroundColor == "white"){
+
+      first = "white"
+        } 
+        else {
+      first="black"
+      }
+     
+      var params = new URLSearchParams();
+      params.append("darkmode",first);
+      
+      var url = "playstation.html?" + params.toString();
+      location.href = url;
+  }
+
+  function xbox () {
+  
+      var first;
+    
+      if(document.getElementById("header").style.backgroundColor == "white"){
+
+      first = "white"
+        } 
+        else {
+      first="black"
+      }
+
+      var params = new URLSearchParams();
+      params.append("darkmode",first);
+      
+      var url = "Xbox.html?" + params.toString();
+      location.href = url;
+  }
+
+  function recent () {
+   
+      var first;
+    
+      if(document.getElementById("header").style.backgroundColor == "white"){
+
+      first = "white"
+        } 
+        else {
+      first="black"
+      }
+     
+      var params = new URLSearchParams();
+      params.append("darkmode",first);
+     
+      var url = "recent.html?" + params.toString();
+      location.href = url;
+  }
+
+  function home () {
+      
+      var first;
+    
+      if(document.getElementById("header").style.backgroundColor == "white"){
+
+      first = "white"
+        } 
+        else {
+      first="black"
+      }
+      var params = new URLSearchParams();
+      params.append("darkmode",first);
+     
+      var url = "index.html?" + params.toString();
+      location.href = url;
+  }
+
+    // (A) tar emot från url och körs- start
+    var params = new URLSearchParams(window.location.search),
+          first = params.get("darkmode");
+    if( first == "black"){
+
+        collection = document.getElementsByClassName("darkmode");
+      for (var i = 0; i < collection.length; i++) {
+          collection[0].style.color = "black";
+        }
+
+        collection = document.getElementsByClassName("what_we_do");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("child bounce");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("theImage");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("link wobble-to-top-right-on-hover");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("hello");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        document.getElementById("header").style.backgroundColor = "black"
+        document.getElementById("body").style.backgroundColor = "black"
+        document.getElementById("ever").style.backgroundColor = "black"
+        document.getElementById("footer").style.backgroundColor = "black"
+
+    } 
+else {
+
+    var collection = document.getElementsByClassName("darkmode");
+          for (var i = 0; i < collection.length; i++) {
+          collection[0].style.color = "white";
+          }
+
+          collection = document.getElementsByClassName("what_we_do");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "black";
+        }
+
+        collection = document.getElementsByClassName("hello");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "black";
+        }
+        document.getElementById("header").style.backgroundColor = "white"
+        document.getElementById("ever").style.backgroundColor = "white"
+        document.getElementById("footer").style.backgroundColor = "white"
+        document.getElementById("body").style.backgroundColor = "white"
+
+    } 
+   // (A) tar emot från url och körs- end
+ 
+</script> 
+</body>
+</html>

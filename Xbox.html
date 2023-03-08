@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Xbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body id="body">
+
+<!-- Header-start -->
+<header id="header">
+    <li onclick="home()"><a><img src="images/The-Rag-logo_chosen_WHITE.png" width="40px" alt=""></a></li>
+    <li class="text">|</li>
+    <li onclick="recent()"><a class="child bounce text">Recent </a></li>
+    <li onclick="playstation()"><a class="theImage text" >Playstation</a></li>
+    <li onclick="aboutus()"><a class="hvr-grow text">About Us</a></li>
+</header>
+<!-- Header-end -->
+
+<!-- pictures and text about the xbox-start -->
+<div class="play">
+
+    <div class="ps3">
+        <img  src="https://www.giantbomb.com/a/uploads/scale_small/0/3699/359843-xbox.jpg" alt="" height="280px" width="280px">
+        <h3 class="hello"> Xbox First Generation</h3>
+        <p class="hello">The system was officially launched at midnight on November 15, 2001, three days before the subsequent launch of the Nintendo GameCube, The Xbox was a fierce competitor, offering a 733 megahertz Intel Pentium III processor. It also had a built-in hard disk for storage, plus an Ethernet port for online gaming through Xbox Live — one of the first fee-based gaming services.</p>
+
+    </div>
+     
+    <div class="ps4">
+       <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Microsoft-Xbox-360-E-wController.jpg/640px-Microsoft-Xbox-360-E-wController.jpg" alt="" height="280px" width="280px">
+       <h3 class="hello">Xbox 360</h3>
+       <p class="hello">The Xbox 360, like all video game consoles, is just a computer with hardware and software dedicated to the function of running video game software, The Xbox 360 is also a specially packaged computer, but once you look inside, you realize that this console has quite a bit under the hood. Custom IBM Power PC-based CPU with three 3.2 GHz cores, 512 MB 700 MHz GDDR3 RAM, </p>
+
+    </div>
+
+    <div class="ps5">
+       <img src="https://pricespy-75b8.kxcdn.com/product/standard/280/673888.jpg" alt="" height="280px" width="280px">
+       <h3 class="hello">Xbox 360 S</h3>
+       <p class="hello">The Xbox 360 S features a similar but refined design to its predecessor. The Xbox 360 S is 17% smaller in form factor than it's predecessor and features significant design changes such as the removal of the two memory card slots featured on previous models as well as relocation of the USB controller receptacle, The initial version included an upgraded 250GB hard drive, with limited editions featuring a larger 320GB model. </p>
+    </div>
+</div>
+ 
+<div class="play">
+
+
+    <div class="ps3">
+        <img src="http://cdna.pcpartpicker.com/static/forever/images/product/6448a8f354b22a48f9cce23de856496b.256p.jpg" alt="" height="280px" width="280px">
+        <h3 class="hello"> Xbox One</h3>
+        <p class="hello">The Xbox One is a video game console developed and marketed by Microsoft. It was announced on May 21, 2013. Initially, the Xbox One launched with a 500 GB hard drive. However, in 2014, a new bundle was released that included a 1TB Xbox One  853 MHz, 1.3 TFLOPS S: 914 MHz, 1.4 TFLOPS X: 1.172 GHz AMD Radeon GCN architecture (built into APU), 6.0 TFLOPS.</p>
+    </div>
+    
+    <div class="ps4">
+      <img  src="https://m1.secondhandapp.at/2.0/6399ff36ea6ed64568425e40?height=256&width=256" alt="" height="280px" width="280px">
+      <h3 class="hello"> Xbox one X</h3>
+      <p class="hello"> The Xbox One X  was released on november 7, 2017 andremains one of the most powerful gaming consoles you can buy right now. It represents a major performance boost over the likes of PS4 and Xbox One S. Native 4K gaming and HDR,  Storage size is 1TB as standard, but can be upgraded with external drives, Custom AMD Jaguar CPU @ 2.3GHz with 8 cores. </p>
+    </div>
+     
+
+    <div class="ps5">
+        <img src="https://sharafstore.com/web/image/product.product/1810/image_256 " alt="" height="280px" width="280px">
+        <h3 class="hello">Xbox Series X </h3>
+        <p class="hello"> The Xbox Series X was realeased on the November 10, 2020, The Xbox Series X offers vast gains in gaming performance and features over its predecessor, the Xbox One. An 8-core 3.8 GHz processor combines with 16GB of GDDR6 RAM and a 1.82 GHz GPU with 52 compute units (CUs) to deliver an incredible 12 teraflops (TFLOPS) of floating-point performance.3D audio lets you pinpoint sounds like never before.</p>
+    </div>
+
+</div>
+<!-- pictures and text about the xbox-end -->
+
+<!-- footer,time,logos-start -->
+<footer id="footer">
+
+    <span class="text"id="hours">00</span>
+    <span class="text">:</span>
+    <span  class="text"id="minutes" >00</span>
+    <span class="text">:</span>
+    <span  class="text"id="seconds">00</span>
+
+<h4 class="text">© 2022 Rag Europe B.V.</h4>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+        width="30 px" alt="">
+    <img src="http://re-form.se/wp-content/uploads/2020/02/new-instagram-logo-png-transparent-light.png"
+        width="30px" alt="">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
+        width="30px" alt="">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
+        width="36px" alt="">
+</footer>
+  <!-- footer,time,logos-end -->
+
+<script>
+
+// (A) time script- start
+function displayTime() {
+      var dateTime = new Date();
+      var hrs = dateTime.getHours();
+      var min = dateTime.getMinutes();
+      var sec = dateTime.getSeconds();
+      var session = document.getElementById('session');
+  
+      document.getElementById('hours').innerHTML = hrs;
+      document.getElementById('minutes').innerHTML = min;
+      document.getElementById('seconds').innerHTML = sec;
+  
+  }
+        setInterval(displayTime, 10);
+       // (A) time script- end
+
+  // (A) onclick för varje sida då den skickar och testar om de dark elr wwhite- start
+  function aboutus() {
+        
+        var first;
+      
+        if(document.getElementById("header").style.backgroundColor == "white"){
+    
+        first = "white"
+        } 
+        else {
+        first="black"
+        }
+
+        var params = new URLSearchParams();
+        params.append("darkmode",first);
+        
+        var url = "aboutus.html?" + params.toString()
+        location.href = url;
+        
+      }
+
+      function recent() {
+       
+        var first;
+      
+        if(document.getElementById("header").style.backgroundColor == "white"){
+  
+        first = "white"
+        } 
+        else {
+        first="black"
+        }
+        
+        var params = new URLSearchParams();
+        params.append("darkmode",first);
+        
+      
+        var url = "recent.html?" + params.toString()
+        location.href = url;
+        
+      }
+      
+      function home() {
+      
+        var first;
+      
+        if(document.getElementById("header").style.backgroundColor == "white"){
+  
+        first = "white"
+        } 
+        else {
+        first="black"
+        }
+       
+        var params = new URLSearchParams();
+        params.append("darkmode",first);
+        
+        
+     
+        var url = "index.html?" + params.toString()
+        location.href = url;
+      }
+
+      function playstation() {
+        
+        var first;
+      
+        if(document.getElementById("header").style.backgroundColor == "white"){
+  
+        first = "white"
+        } 
+        else {
+        first="black"
+        }
+      
+        var params = new URLSearchParams();
+        params.append("darkmode",first);
+        
+      
+        var url = "playstation.html?" + params.toString()
+        location.href = url;
+       
+      }
+        // (A) onclick för varje sida då den skickar och testar om de dark elr wwhite- end
+
+
+ 
+ // (A) tar emot från url och körs- start 
+var params = new URLSearchParams(window.location.search),
+first = params.get("darkmode");
+if( first == "black"){
+
+
+
+collection = document.getElementsByClassName("darkmode");
+for (var i = 0; i < collection.length; i++) {
+collection[0].style.color = "black";
+}
+
+collection = document.getElementsByClassName("what_we_do");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "white";
+}
+
+collection = document.getElementsByClassName("child bounce");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "white";
+}
+
+collection = document.getElementsByClassName("theImage");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "white";
+}
+
+collection = document.getElementsByClassName("link wobble-to-top-right-on-hover");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "white";
+}
+
+collection = document.getElementsByClassName("hello");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "white";
+}
+
+collection = document.getElementsByClassName("text");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "white";
+}
+
+document.getElementById("header").style.backgroundColor = "black"
+document.getElementById("body").style.backgroundColor = "black"
+document.getElementById("footer").style.backgroundColor = "black"
+
+
+
+
+
+
+
+} 
+else {
+
+
+    collection = document.getElementsByClassName("darkmode");
+for (var i = 0; i < collection.length; i++) {
+collection[0].style.color = "black";
+}
+
+collection = document.getElementsByClassName("what_we_do");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "black";
+}
+
+collection = document.getElementsByClassName("child bounce");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "black";
+}
+
+collection = document.getElementsByClassName("theImage");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "black";
+}
+
+collection = document.getElementsByClassName("link wobble-to-top-right-on-hover");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "black";
+}
+
+collection = document.getElementsByClassName("hello");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "black";
+}
+
+collection = document.getElementsByClassName("text");
+for (var i = 0; i < collection.length; i++) {
+collection[i].style.color = "black";
+}
+document.getElementById("header").style.backgroundColor = "white"
+document.getElementById("footer").style.backgroundColor = "white"
+document.getElementById("body").style.backgroundColor = "white"
+}
+// (A) tar emot från url och körs- end
+
+</script>
+</body>
+</html>
+
+
+
+
+

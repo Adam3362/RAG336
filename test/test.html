@@ -5,30 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="games.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="recent.css">
+
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 
-<body>
-<header>
+<body id="body">
+<header id="header">
     <li><a href="index.html"><img src="images/The-Rag-logo_chosen_WHITE.png" width="40px" alt=""></a></li>
-    <li>|</li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html">Console</a></li>
-    <li><a href="index.html">Games</a></li>
-    <li><a href="index.html">Contact Us</a></li>
-
-    <div class="search bar">
-
-        <div class="topnav">
-
-            <input type="text" placeholder="Search..">
-        </div>
-    </div>
+    <li class="text">|</li>
+    <li><a class="theImage" href="console.html">Playstation</a></li>
+    <li><a class="hvr-grow" href="Xbox.html">Xbox</a></li>
+    <li><a class="link wobble-to-top-right-on-hover" href="aboutus.html">About Us</a></li>
+    
+    
+  
 </header>
 
 <div class="container-slideshow">
@@ -79,7 +76,7 @@
         
         <p id="demo"></p>
 
-            <button class= "pascal"type="button"
+            <button id="get"class= "pascal"type="button"
             onclick="document.getElementById('demo').innerHTML">
             BUY NOW</button>
     </div>
@@ -87,7 +84,7 @@
       
 
  
-<footer>
+<footer id="footer">
 
     <h4>© 2022 Rag Europe B.V.</h4>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" width="30 px" alt="">
@@ -97,6 +94,7 @@
 
 </footer>
 
+</body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
 const swiper = new Swiper('.swiper', {
@@ -143,7 +141,81 @@ prevEl: '.swiper-button-prev',
 
 });
 
+ // (A) GET THE PARAMETERS
+ var params = new URLSearchParams(window.location.search),
+          first = params.get("darkmode");
+    if( first == "black"){
 
+        
+   
+        collection = document.getElementsByClassName("darkmode");
+      for (var i = 0; i < collection.length; i++) {
+          collection[0].style.color = "black";
+        }
+
+        collection = document.getElementsByClassName("what_we_do");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("child bounce");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("theImage");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("link wobble-to-top-right-on-hover");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("hello");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        document.getElementById("header").style.backgroundColor = "black"
+        document.getElementById("body").style.backgroundColor = "black"
+        document.getElementById("ever").style.backgroundColor = "black"
+        document.getElementById("footer").style.backgroundColor = "black"   
+
+
+    
+    
+    
+    
+    } 
+else {
+
+ var collection = document.getElementsByClassName("darkmode");
+      for (var i = 0; i < collection.length; i++) {
+      collection[0].style.color = "white";
+      }
+
+      collection = document.getElementsByClassName("what_we_do");
+    for (var i = 0; i < collection.length; i++) {
+      collection[i].style.color = "black";
+    }
+
+    collection = document.getElementsByClassName("hello");
+    for (var i = 0; i < collection.length; i++) {
+      collection[i].style.color = "black";
+    }
+    document.getElementById("header").style.backgroundColor = "white"
+    document.getElementById("ever").style.backgroundColor = "white"
+    document.getElementById("footer").style.backgroundColor = "white"
+    document.getElementById("body").style.backgroundColor = "white"
+
+
+
+
+
+
+    } 
 
 </script>
 </body>

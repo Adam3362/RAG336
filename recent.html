@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/recent.css"><link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<body id="body">
+
+  <!-- Header-start -->
+<header id="header">
+    <li onclick="home()"><a><img src="images/The-Rag-logo_chosen_WHITE.png" width="40px" alt=""></a></li>
+    <li class="text">|</li>
+    <li onclick="playstation()"><a class="theImage">Playstation</a></li>
+    <li onclick="xbox()"><a class="hvr-grow">Xbox</a></li>
+    <li onclick="aboutus()"><a class="link wobble-to-top-right-on-hover">About Us</a></li>
+</header>
+    <!-- Header-end -->
+
+    <!-- Slideshow-start -->
+<div class="container-slideshow">
+    <div class="swiper">
+
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/wp7841598.webp" ></div>
+          <div class="swiper-slide"><img src="images/https___hypebeast.com_image_2020_11_sony-playstation-5-closer-look-release-info-000.jpg" alt=""></div>
+      </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+    </div>
+  </div>
+
+  <div class="swiper">
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/vrdmarzhvk441.jpg" width="50px"></div>
+          <div class="swiper-slide"><img src="images/b90ad58f-9950-44a7-87fa-1ee8f0b6a90e.jpg" alt=""></div>
+        </div>
+         <div class="swiper-pagination"></div>
+      
+         <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+         <!-- Slideshow-end -->
+
+  </div>
+    
+   <!-- information-start -->
+      <div class="container-information">
+        <p class="text">(PlayStation 5) The latest Sony PlayStation introduced in November 2020. Powered by an eight-core AMD Zen 2 CPU and custom AMD Radeon GPU, the PS5 is offered in two models: with and without a 4K Blu-ray drive. Supporting a 120Hz video refresh, the PS5 is considerably more powerful than the PS4 and PS4 Pro.</p>
+        <p class="text">(PlayStation 5) The latest Sony PlayStation introduced in November 2020. Powered by an eight-core AMD Zen 2 CPU and custom AMD Radeon GPU, the PS5 is offered in two models: with and without a 4K Blu-ray drive. Supporting a 120Hz video refresh, the PS5 is considerably more powerful than the PS4 and PS4 Pro.</p>
+      </div>
+        <!-- information-end -->
+
+   <!-- footer,time,logos-start -->
+<footer id="footer">
+
+    <span class="text"id="hours">00</span>
+    <span class="text">:</span>
+    <span  class="text"id="minutes">00</span>
+    <span class="text">:</span>
+    <span  class="text"id="seconds">00</span>
+
+    <h4 class="text">© 2022 Rag Europe B.V.</h4>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" width="30 px" alt="">
+    <img src="http://re-form.se/wp-content/uploads/2020/02/new-instagram-logo-png-transparent-light.png" width="30px" alt="">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" width="30px" alt="">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" width="36px" alt="">
+
+</footer>
+<!-- footer,time,logos-end -->
+
+</body>
+
+
+<script>
+
+    // (A) time script- start
+  function displayTime() {
+      var dateTime = new Date();
+      var hrs = dateTime.getHours();
+      var min = dateTime.getMinutes();
+      var sec = dateTime.getSeconds();
+      var session = document.getElementById('session');
+  
+      document.getElementById('hours').innerHTML = hrs;
+      document.getElementById('minutes').innerHTML = min;
+      document.getElementById('seconds').innerHTML = sec;
+  
+  }
+  setInterval(displayTime, 10);
+// (A) time script- end
+
+  // (A) onclick för varje sida då den skickar och testar om de dark elr white- start
+  function aboutus() {
+        var first;
+      
+        if(document.getElementById("header").style.backgroundColor == "white"){
+  
+       first = "white"
+        } 
+        else {
+       first="black"
+       }
+        var params = new URLSearchParams();
+        params.append("darkmode",first);
+        
+        var url = "aboutus.html?" + params.toString()
+        location.href = url;
+     
+      }
+
+      function home() {
+        
+        var first;
+      
+        if(document.getElementById("header").style.backgroundColor == "white"){
+  
+        first = "white"
+        } 
+        else {
+        first="black"
+        }
+
+        var params = new URLSearchParams();
+        params.append("darkmode",first);
+        
+        var url = "index.html?" + params.toString()
+        location.href = url;
+       
+      }
+
+      function xbox() {
+       
+        var first;
+      
+        if(document.getElementById("header").style.backgroundColor == "white"){
+  
+        first = "white"
+          } 
+          else {
+        first="black"
+        }
+      
+        var params = new URLSearchParams();
+        params.append("darkmode",first);
+        
+        var url = "Xbox.html?" + params.toString()
+        location.href = url;
+       
+      }
+
+      function playstation() {
+       
+        var first;
+      
+        if(document.getElementById("header").style.backgroundColor == "white"){
+  
+        first = "white"
+            } 
+            else {
+          first="black"
+          }
+      
+        var params = new URLSearchParams();
+        params.append("darkmode",first);
+        
+        var url = "playstation.html?" + params.toString()
+        location.href = url;
+      }
+       // (A) onclick för varje sida då den skickar och testar om de dark elr white- end
+
+  // (A) tar emot från url och körs- start
+ var params = new URLSearchParams(window.location.search),
+          first = params.get("darkmode");
+    if( first == "black"){
+
+        collection = document.getElementsByClassName("darkmode");
+        for (var i = 0; i < collection.length; i++) {
+          collection[0].style.color = "black";
+        }
+
+        collection = document.getElementsByClassName("theImage");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("link wobble-to-top-right-on-hover");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("hvr-grow");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+        collection = document.getElementsByClassName("text");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "white";
+        }
+
+        document.getElementById("header").style.backgroundColor = "black"
+        document.getElementById("body").style.backgroundColor = "black"
+        document.getElementById("footer").style.backgroundColor = "black"   
+    
+    } 
+else {
+
+        var collection = document.getElementsByClassName("darkmode");
+        for (var i = 0; i < collection.length; i++) {
+        collection[0].style.color = "white";
+        }
+
+        collection = document.getElementsByClassName("theImage");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "black";
+        }
+
+        collection = document.getElementsByClassName("link wobble-to-top-right-on-hover");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "black";
+        }
+
+        
+        collection = document.getElementsByClassName("hvr-grow");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "black";
+        }
+        collection = document.getElementsByClassName("text");
+        for (var i = 0; i < collection.length; i++) {
+          collection[i].style.color = "black";
+        }
+        document.getElementById("header").style.backgroundColor = "white"
+        document.getElementById("footer").style.backgroundColor = "white"
+        document.getElementById("body").style.backgroundColor = "white"
+
+    } 
+
+    // (A) tar emot från url och körs- end
+</script>
+
+<script>
+
+// (A) Splash screen - start
+const swiper = new Swiper('.swiper', {
+    autoplay:{
+
+        delay:3000,
+        disableOnInteraction: false,
+          },
+      loop: true,
+
+
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+
+
+});
+
+const container2= new swiper('.container2', {
+    autoplay:{
+
+        delay:3000,
+        disableOnInteraction: false,
+        },
+      loop: true,
+
+
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+
+
+});
+
+// (A) Splash screen - end
+</script>
+</body>
+</html>
+
+
+  
